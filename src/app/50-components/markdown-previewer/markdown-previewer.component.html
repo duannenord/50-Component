@@ -1,0 +1,8 @@
+<div class="markdown-previewer">
+    <h2>Markdown Previewer</h2>
+    <textarea [(ngModel)]="markdownText" placeholder="Write your Markdown here..."></textarea>
+    
+    <h3>Preview</h3>
+    <div class="preview" [innerHTML]="convertedMarkdown"></div>
+  </div>
+  

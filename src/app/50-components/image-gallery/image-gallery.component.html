@@ -1,0 +1,10 @@
+<div class="image-gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" *ngFor="let image of images">
+        <img [src]="image.url" [alt]="image.description" />
+        <p>{{ image.description }}</p>
+      </div>
+    </div>
+  </div>
+  

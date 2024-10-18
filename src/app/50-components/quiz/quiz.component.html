@@ -1,0 +1,17 @@
+<div class="quiz">
+    <h2>Quiz</h2>
+    <div *ngIf="currentQuestionIndex < questions.length">
+      <h3>{{ questions[currentQuestionIndex].question }}</h3>
+      <ul>
+        <li *ngFor="let option of questions[currentQuestionIndex].options">
+          <button (click)="selectAnswer(option)">{{ option }}</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="currentQuestionIndex >= questions.length">
+      <h3>Quiz Complete!</h3>
+      <p>Your score: {{ score }} out of {{ questions.length }}</p>
+      <button (click)="resetQuiz()">Restart Quiz</button>
+    </div>
+  </div>

@@ -1,0 +1,7 @@
+<div class="color-picker">
+    <h2>Color Picker</h2>
+    <input type="color" [(ngModel)]="selectedColor" (input)="updateColor()" />
+    <div class="color-display" [style.backgroundColor]="selectedColor">
+      Selected Color: {{ selectedColor }}
+    </div>
+  </div>

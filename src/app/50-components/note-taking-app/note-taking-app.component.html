@@ -1,0 +1,12 @@
+<div class="note-taking-app">
+    <h2>Note Taking App</h2>
+    <textarea [(ngModel)]="newNote" placeholder="Type your note here..."></textarea>
+    <button (click)="addNote()">Add!</button>
+  
+    <ul>
+      <li *ngFor="let note of notes">
+        <p>{{ note }}</p>
+        <button (click)="removeNote(note)">Remove</button>
+      </li>
+    </ul>
+  </div>

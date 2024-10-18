@@ -1,0 +1,11 @@
+<div class="search-filter">
+    <h2>Search Filter</h2>
+    <input type="text" [(ngModel)]="searchQuery" placeholder="Search Heisei Riders..." />
+  
+    <ul>
+      <li *ngFor="let rider of filteredRiders()">
+        {{ rider }}
+      </li>
+    </ul>
+  </div>
+  
